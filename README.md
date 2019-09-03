@@ -22,11 +22,11 @@ This project utilizes Bootstrap and jQuery. In addition, certain images were man
   * *"stickfigure.png"* -   Stick figure, used as template in *fightimgs* folder
   
   
-  * __"~/assets/faces/"__ for cropped images of character faces.
+  * __"./faces/"__ for cropped images of character faces.
     * All files cropped using Gimp image editor.
-  * __"~/assets/fightimgs/"__ for images of characters used in gameplay. Essentially these are the same images found in *"~/assets/faces"*, but attached to an image of a stick figure.
+  * __"./fightimgs/"__ for images of characters used in gameplay. Essentially these are the same images found in *"./faces"*, but attached to an image of a stick figure.
     * All files are created in Gimp. 
-    * Layered respective image in *"./assets/faces"* onto *"~/assets/stickfig-fight1.png"* & *"~/assets/stickfig-fight2.png"*
+    * Layered respective image in *"./faces"* onto *"./stickfig-fight1.png"* & *"./stickfig-fight2.png"*
   * __"~/assets/minecraft-font/"__ for files to use a custom font called "Minecraft," found on *https://www.dafont.com/minecraft.font*.
   
 * __"~/css/"__ for CSS stylesheet files
