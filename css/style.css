@@ -17,7 +17,7 @@ body {margin-bottom: 10px;}
 
 /* header */
 header.jumbotron {
-    height: 8%;
+    height: 10%;
     padding-top: 0px;
     padding-bottom: 0px;
     margin-bottom: 4px;
@@ -25,6 +25,11 @@ header.jumbotron {
 header.jumbotron h1 {
     font-family: "Minecraft", monospace;
     font-size: 36px;
+    margin-bottom: 0px;
+}
+header.jumbotron small {
+    margin-top: 0px;
+    margin-bottom: 1px;
 }
 
 /* start page */
