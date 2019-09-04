@@ -1,0 +1,178 @@
+/* whole page */
+html, body {
+    background-image: url(../assets/background.jpg);
+    background-color: #333;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Source Serif Pro', serif;
+}
+body {margin-bottom: 10px;}
+.row {
+    width: 100%;
+}
+
+/* header */
+header.jumbotron {
+    height: 8%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 4px;
+}
+header.jumbotron h1 {
+    font-family: "Minecraft", monospace;
+    font-size: 36px;
+}
+
+/* start page */
+#start {
+    display: table;
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+}
+#start-button {
+    box-shadow: 0px 0px 4px gray;
+}
+
+/* all pages */
+#page-title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12px;
+    font-weight: 700;
+    width: 100%;
+}
+#title {
+    color: black;
+    text-shadow: 0px 0px 4px gray;
+}
+
+/* choose character pages */
+.carousel {
+    box-shadow: 0px 0px 12px 5px #555;
+    border-color: #333;
+    border-style: solid;
+    border-width: 4px;
+}
+.carousel-item {
+    position: relative;
+}
+.carousel-caption {
+    position: absolute;
+    color: white;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: auto;
+    background-color: #333;
+    background-clip: inherit;
+    z-index: 1;
+    opacity: 0.8;
+}
+.carousel-caption h5, .carousel-caption p {
+    margin-left: 20px;
+    margin-right: 20px;
+    opacity: 1;
+}
+.carousel-caption h5 {
+    font-weight: 700;
+}
+.carousel-item img {
+    max-height: 550px;
+    width: auto;
+}
+
+/* battle confirm page */
+#confirm-btns {
+    margin-top: 2px;
+    margin-bottom: 6px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#p1inst, #p2inst {font-style: italic;}
+
+.card {
+    position: relative;
+    display: table-row;
+    float: left;
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 0px 0px 12px 5px #555;
+    overflow: hidden;
+}
+.card-img-top {
+    height: 250px;
+    width: auto;
+}
+.card ul {
+    text-align: left;
+    font-style: italic;
+    color: white;
+    overflow: auto;
+}
+
+/* Fight page */
+#p1fightImg, #p2fightImg {
+    width: 200px;
+    height: 400px;
+}
+#p2fightImg {
+    -moz-transform: scale(-1,1);
+    -webkit-transform: scale(-1,1);
+    -o-transform: scale(-1,1);
+    transform: scale(-1,1);
+    filter: FlipH;
+    /* Reverses image of p2 */
+}
+#p1img, #p2img #p1fighting, #p2fighting {
+    display: table-column;
+    width: 50%;
+}
+#p1img, #p2fighting {
+    float: left;
+}
+#p2img, #p1fighting {
+    float: right;
+}
+#p1fighting {justify-content: right;}
+#p2fighting {justify-content: left;}
+#p1fighting, #p2fighting {height: auto;}
+
+#p1attackBtns, #p1instBtns, #p2attackBtns, #p2instBtns {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+#p1stats, #p2stats {
+    bottom: 0;
+    top: auto;
+}
+#p1health, #p2health {
+    width: 100%;
+}
+.toast {
+    position: fixed;
+    z-index: 2;
+}
+/* Forfeit modal */
+.modal {
+    color: black;
+    text-align: center;
+}
+#modal-img {
+    width: 40px;
+    float: left;
+}
+#modal-text {
+    margin-left: 10px;
+    float: left;
+}
+#game, #battle-confirm {
+    display: none;
+}
